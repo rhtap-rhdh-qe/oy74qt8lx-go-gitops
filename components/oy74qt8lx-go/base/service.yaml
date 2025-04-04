@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: oy74qt8lx-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: oy74qt8lx-go 
+  name: oy74qt8lx-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: oy74qt8lx-go 
